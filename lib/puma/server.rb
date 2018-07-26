@@ -738,7 +738,7 @@ module Puma
             content_length = vs
             next
           when TRANSFER_ENCODING
-            allow_chunked = false
+            #allow_chunked = false #melfree
             content_length = nil
           when HIJACK
             response_hijack = vs
